@@ -1,0 +1,46 @@
+<!-- 
+Created on : 28-ago-2019 17:00:00 
+User : Raul Vela 
+Name archive : html5-span.html
+References :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>title</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="any" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      pre{
+        background-color: #ccffcc;
+      }
+
+      code{
+        background-color: #ccccff;
+      }
+
+      span{
+        background-color: #ff9999;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <pre><code class="lang-c"><span class="keyword">for</span> (<span class="ident">j</span> = 0; <span class="ident">j</span> &lt; 256; <span class="ident">j</span>++) {
+  <span class="ident">i_t3</span> = (<span class="ident">i_t3</span> & 0x1ffff) | (<span class="ident">j</span> &lt;&lt; 17);
+  <span class="ident">i_t6</span> = (((((((<span class="ident">i_t3</span> >> 3) ^ <span class="ident">i_t3</span>) >> 1) ^ <span class="ident">i_t3</span>) >> 8) ^ <span class="ident">i_t3</span>) >> 5) & 0xff;
+  <span class="keyword">if</span> (<span class="ident">i_t6</span> == <span class="ident">i_t1</span>)
+    <span class="keyword">break</span>;
+}</code></pre>
+  </body>
+</html>

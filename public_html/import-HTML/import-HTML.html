@@ -1,0 +1,68 @@
+<!-- 
+Created on : 03-oct-2019 14:08:22 
+User : Raul Vela 
+Ref : https://filisantillan.com/introduccion-y-uso-de-html-imports/
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Import HTML</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="Import HTML">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      #text{
+        width: 50%;
+        height: auto;
+        padding: 2%;
+        margin: 1% auto;
+        text-align: center;
+        font-size: 1.2em;
+        border-radius: 7px;
+        color: #fff;
+        background-color: #393e46;
+      }
+
+      #list{
+        width: 30%;
+        margin: 1% auto;
+        padding: 3% 0 3% 5%;
+        list-style: decimal;
+        font-family: Roboto,sans-serif;
+        border-radius: 7px;
+        background-color: #00adb5;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 id="text">
+      Soy un documento HTML para importar utilizando la etiqueta &lt;link&gt;<br>
+    </h1> 
+
+    <ul id="list">
+      <li>Custom Elements</li>
+      <li>HTML Imports</li>
+      <li>Templates</li>
+      <li>Shadow Dom</li>
+    </ul>
+
+    <script>
+// Selecciono el elemento que quiero importar mediante el selector
+      var html = document.querySelector('link[rel="import"]').import;
+    </script>
+
+  </body>
+</html>
